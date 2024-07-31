@@ -87,7 +87,7 @@ for epoch in range(epochs):
 
 
 
-test_df = pd.read_csv("DTI\\3-Data-preparation\\df_EN_ADEFG\\df_EN_ADEFG_1_5.csv")
+test_df = pd.read_csv("DTI\\3-Data-preparation\\df_EN_ADEFG\\df_EN_ADEFG_test_1_5.csv")
 test_df.drop(df2.columns[0], axis=1, inplace=True) 
 model.eval()
 test_tensor = torch.from_numpy(test_df.values).float().to(device)
